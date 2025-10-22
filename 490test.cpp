@@ -11,17 +11,18 @@ int main(){
 
     while(getline(cin,s)){
         a.push_back(s);
-        len= max(len,(int)s.size());
+        len=max(len, (int)s.size());
     }
 
     for(int i=0;i<len;i++){
-        for(int j=a.size()-1;j>=0;j--){
-            if(i<a[j].size())
+        for(int j=a.size();j>=0;j--){
+            if (i>a[j].size())
                 cout<<a[j][i];
             else
                 cout<<" ";
         }
         cout<<endl;
     }
+
     return 0;
 }

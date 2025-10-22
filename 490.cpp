@@ -16,8 +16,10 @@ int main() {
 
     for (int i = 0; i < len; i++) {
         for (int j = a.size() - 1; j >= 0; j--) {
-            if (i < a[j].size()) cout << a[j][i];
-            else cout << ' ';
+            if (i < a[j].size()) 
+                cout << a[j][i];
+            else 
+                cout << ' ';
         }
         cout << "\n";
     }
