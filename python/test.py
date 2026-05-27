@@ -1,19 +1,10 @@
-#10370
-C=int(input())
+import sys
+tokens=sys.stdin.read().split()
+a=int(tokens[0])
 
-for _ in range(C):
-    data=list(map(int,input().split()))
+for i in range(1,a+1):
+    b=int(tokens[i])
+    c=bin(b).count("1")
+    d=bin(int(str(b),16)).count("1")
     
-    n=data[0]
-    scorces=data[1:]
-    
-    avg=sum(scorces)/n
-    count=0
-    
-    for scorce in scorces:
-        if scorce> avg:
-            count+=1
-    
-    percent=count/n*100
-    
-    print("{percent:.3f}%")
+    print(c,d)    
