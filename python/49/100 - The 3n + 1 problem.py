@@ -1,5 +1,5 @@
 
-
+#https://onlinejudge.org/external/1/100.pdf
 import sys
 
 tokens = sys.stdin.read().split()
