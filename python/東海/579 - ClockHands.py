@@ -1,3 +1,4 @@
+#https://onlinejudge.org/external/5/579.pdf
 import sys
 tokens=sys.stdin.read().split()
 it=iter(tokens)
